@@ -118,15 +118,21 @@ main p {
   height: 25em;
 }
 
-.divide {
+.Picture {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.25em;
 }
 
-.divide img {
-  width: 66%;
+.Picture img {
+  width: 50%;
   height: auto;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+.project h2{
+  margin-left: 30%;
 }
 
 .project-nav {
