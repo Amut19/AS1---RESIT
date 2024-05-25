@@ -141,6 +141,73 @@ main p {
   grid-area: nav;
 }
 
+/* CONTACT PAGE */
+
+h1 {
+  color: #ecf2ff;
+  text-align: center;
+  font-size: 3.75em;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 2em;
+}
+
+input {
+  background-color: #ffffff;
+  width: 70%;
+  margin-left: 12%;
+  font-size: 1.25em;
+  padding: 1em 1em;
+  border-color: #1d1e18;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 0.625em;
+}
+
+textarea {
+  background-color: #ffffff;
+  width: 70%;
+  margin-left: 12%;
+  font-size: 1.25em;
+  padding: 1em 1em;
+  border-radius: 1.25em;
+  border-color: #1d1e18;
+  margin-bottom: 1.5625em;
+  font-family:'Courier New', Courier, monospace;
+}
+
+input:focus-within {
+  outline: none;
+  border-color: rgb(255, 255, 255);
+  border-width: 3px;
+}
+
+textarea:focus-within {
+  outline: none;
+  border-color: rgb(255, 255, 255);
+  border-width: 0.18em;
+}
+
+button {
+  background-color: rgb(60, 65, 66);
+  border-radius: 1.25em;
+  border-color: #1d1e18;
+  font-size: 1.28em;
+  padding: 0.6em 1.1em;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  color: #ecf2ff;
+  margin-bottom: 7em;
+}
+
+button:hover {
+  background-color: rgb(0, 213, 255);
+  cursor: pointer;
+}
+
+.round {
+  padding-top: 5em;
+}
+
   
   
 
