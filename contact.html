@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" media="screen">
+    <link rel="stylesheet" href="desktop.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="mobile.css" media="screen and (min-width: 800px)">
+
+    <title>Home</title>
+</head>
+
+<body>
+
+    <input type="checkbox" id="toggle" />
+    <nav>
+
+        <label for="toggle" class="toggle-button">
+
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </label>
+
+        <div class="Navigation">
+
+            <ul>
+                <li><a class="active" href="Home.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="demo.html">Demo</a></li>
+                <li><a href="report.html">Report</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <header>
+
+        <h1>CONTACT FORM</h1>
+
+    </header>
+    <main class="Forms">
+        <form action="mailto: aymutlu2004@gmail.com" method="post" class="form">
+           
+            <input type="text" name="first" placeholder="First Name" required />
+            <input type="text" name="last" placeholder="Last Name" required />
+            <input type="email" name="email" placeholder="Email Address" required />
+           
+            <textarea cols="60" rows="5" name="message" placeholder="Enter text" required></textarea>
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </main>
+    <footer>&copy; AYGYUN MUTLU</footer>
+</body>
+
+</html>
