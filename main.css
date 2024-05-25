@@ -109,7 +109,29 @@ main p {
 
 /* Project Page */
 
+.project {
+  background-color: rgb(60, 65, 66);
+  color: #ecf2ff;
+  padding-top: 1.25em;
+  margin: 1em;
+  position: relative;
+  height: 25em;
+}
 
+.divide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25em;
+}
+
+.divide img {
+  width: 66%;
+  height: auto;
+}
+
+.project-nav {
+  grid-area: nav;
+}
 
   
   
