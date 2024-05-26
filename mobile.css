@@ -1,11 +1,125 @@
-#toggle:checked + nav .bar:first-child {
-    transform: rotate(45deg) translate(5px, 5px);
-  } /* the top hamburger part of the hamburger icon */
-  
-  #toggle:checked + nav .bar:nth-child(2) {
-    opacity: 0;
-  } /*  the middle part of the hamburger icon */
-  
-  #toggle:checked + nav .bar:last-child {
-    transform: rotate(-45deg) translate(5px, -5px);
-  } /*  the bottom part of the hamburger icon  */
+body {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav"
+    "header"
+    "main"
+    "footer";
+}
+
+#toggle {
+  display: none;
+}
+
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.875em;
+  height: 1.26em;
+  cursor: pointer;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #ecf2ff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+#toggle:checked+nav .bar:first-child {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#toggle:checked+nav .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#toggle:checked+nav .bar:last-child {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+nav {
+  flex-direction: column;
+  align-items: flex-start;
+  background-color:  rgb(60, 65, 66);
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+#toggle:checked+nav {
+  height: auto;
+}
+
+.navbar-links ul {
+  width: 100%;
+}
+
+.navbar-links li {
+  text-align: center;
+}
+
+.navbar-links li a {
+  padding: 0.4rem 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+a.active,
+a:hover {
+  background: rgb(240, 98, 54);
+  transition: 0.5s;
+}
+
+/* Project page for the mobile version */
+.project {
+  background-color: rgb(60, 65, 66);
+  color: #ecf2ff;
+  padding-top: 1em;
+  margin: 0.6em;
+  border-radius: 0.6em;
+  position: relative;
+  height: 20em;
+}
+
+.divide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.divide img {
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+}
+
+.project-nav {
+  grid-area: nav;
+}
+
+.project:not(:last-child) {
+  margin-bottom: 1.25em;
+}
+
+.image {
+  width: 300px;
+  display: block;
+  height: 400px;
+}
+
+.image img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin-left: 1em;
+  margin-top: 1em;
+}
