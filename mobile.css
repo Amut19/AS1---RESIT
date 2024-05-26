@@ -1,0 +1,11 @@
+#toggle:checked + nav .bar:first-child {
+    transform: rotate(45deg) translate(5px, 5px);
+  } /* the top hamburger part of the hamburger icon */
+  
+  #toggle:checked + nav .bar:nth-child(2) {
+    opacity: 0;
+  } /*  the middle part of the hamburger icon */
+  
+  #toggle:checked + nav .bar:last-child {
+    transform: rotate(-45deg) translate(5px, -5px);
+  } /*  the bottom part of the hamburger icon  */
