@@ -180,9 +180,8 @@ button:hover {
 /* DEMO PAGE */
 main iframe {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1.8em;
+  margin-left: 25em;
+  padding-top: 10em;
 }
 
 .main-video {

@@ -123,3 +123,17 @@ a:hover {
   margin-left: 1em;
   margin-top: 1em;
 }
+
+main iframe {
+  display: block;
+  margin-left: 0.5em;
+  padding-top: 0.5em;
+}
+
+.main-video {
+  padding-top: 1.35em;
+}
+
+iframe {
+  border: none;
+}
