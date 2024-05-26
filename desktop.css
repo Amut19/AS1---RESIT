@@ -1,11 +1,50 @@
 body {
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows:auto; 
-    grid-template-areas: 
-    "nav nav nav" 
-    "header header header" 
-    "main main main" 
-    "footer footer footer";
-  }
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 15% 9% 110% 5%; 
+  grid-template-areas: 
+  "nav nav nav" 
+  "header header header" 
+  "main main main" 
+  "footer footer footer";
+}
+
+.form {
+  display: grid;
+  justify-content: center;
+}
+
+#toggle {
+  display: none; 
+}
+
+.divide {
+  padding-top: 9em;
+}
+
+.project-body {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 5% 9% 100% 5%;
+  grid-template-areas: 
+  "nav nav nav"
+   "header header header" 
+   "main main main" 
+   "footer footer footer";
+}
+
+.image {
+  width: 300px;
+  display: block;
+  height: 400px;
+}
+
+.image img { 
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  display: block;
+  margin-left: 35em;
+  margin-top: 7em;
+}
 
